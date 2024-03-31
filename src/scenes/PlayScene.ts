@@ -5,6 +5,8 @@ export class PlayScene extends Phaser.Scene {
     super('PlayScene')
   }
   create() {
-    this.add.image(0, 0, 'ground')
+    this.add
+    .tileSprite(0, 340, 1000, 26, 'ground')
+    .setOrigin(0, 1)
   }
 }
