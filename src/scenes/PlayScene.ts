@@ -10,7 +10,10 @@ export class PlayScene extends Phaser.Scene {
   }
   create() {
     this.createEnviroment();
-    this.add.image(0, 0, 'dino-idle').setOrigin(0, 0);
+    this.createPlayer();
+  }
+  createPlayer(){
+    this.physics.add.sprite(0, this.gameHeight, 'dino-idle').setOrigin(0, 1);
   }
   createEnviroment(){
     this.add
